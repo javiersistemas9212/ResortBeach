@@ -1,0 +1,229 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+
+.navbar{
+  background-color:white !important;
+  color:black;
+}
+
+.navbar-collapse{
+    min-height:100px;
+}
+
+.navbar-header a img {
+    border-radius: 20px;
+    background-color:white;
+}
+.navbar-nav li a {
+    font-size: 10px;
+    margin-top: 10px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.navbar-nav li a i{
+    font-size: 20px;
+    margin-bottom:5px;
+}
+
+.navbar-nav li:hover {
+   font-weight:bold;
+   background-color:black;
+   color:white;
+}
+
+.navbar-nav li{
+    min-width:100px !important;
+}
+
+#iconologin {
+    float: right;
+}
+
+.center {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.centerX{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#infoGeneral{
+    height:50vh;
+    background-image:url(../images/resortimagen.webp);
+    padding: 0 50px;
+}
+
+#infoGeneral .row div a{
+    width:300px;
+    margin-bottom:10px;
+    font-size:20px;
+}
+
+#tituloGeneral{
+    color:white;
+}
+
+#paginaLogin, #paginaRegistro {
+    background-image: url(../images/palmeras.jpg);
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+    #paginaLogin form, #paginaRegistro form {
+        background-color: black;
+        opacity: 0.8;
+        padding: 30px;
+    }
+
+    #paginaLogin form div input, #paginaLogin form div a, #paginaRegistro form div input, #paginaRegistro form div a {
+        opacity: 1;
+        background-color: black;
+        color:white;
+   }
+
+        #paginaLogin form div label,
+        #paginaLogin form div span,
+        #paginaLogin form a,
+        #paginaRegistro form div label,
+        #paginaRegistro form div span,
+        #paginaRegistro form a {
+            color: white;
+        }
+
+.tooltipSubs {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    left: 0;
+    top: 25rem;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.cartaSuscribsiones {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    background: no-repeat 0px 0px;
+    overflow: hidden;
+}
+
+    .cartaSuscribsiones:hover .tooltipSubs {
+        top: 0px;
+    }
+
+#contenedorLista {
+    max-height: 80px;
+    border-radius: 50px;
+    background-color: white;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+#contenedorLista:hover {
+   background-color: lightgray;
+}
+
+    #contenedorLista div img {
+        height: 100px;
+        max-width: 100px;
+        border-radius: 50%;
+        z-index:-99;
+    }
+
+
+.paginasconEncabezado{
+  margin-top:80px;
+}
+
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+            display: none;
+        }
+    }
